@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Impulso Dev</title>
   <style>
+    <section id="contacto" style="padding: 2rem; background-color: #1a1a1a; color: white;">
+  <h2>Contactanos</h2>
+  <form action="https://formspree.io/f/moqglnkl" method="POST" style="display: flex; flex-direction: column; max-width: 500px;">
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" name="nombre" required style="margin-bottom: 1rem; padding: 0.5rem;">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="_replyto" required style="margin-bottom: 1rem; padding: 0.5rem;">
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" required rows="5" style="margin-bottom: 1rem; padding: 0.5rem;"></textarea>
+
+    <button type="submit" style="padding: 0.75rem; background-color: #3fa46f; border: none; color: white; font-weight: bold;">Enviar</button>
+  </form>
+</section>  
+    
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -96,7 +112,10 @@
     <section class="cta">
       <h2>¿Querés que creemos tu web?</h2>
       <p>Contanos tu idea y te ayudamos a llevarla a la realidad.</p>
-      <a href="mailto:fac.obando20@gmail.com">Escribinos</a>
+      <a href="#contacto" style="text-decoration: none;">
+  <button style="padding: 10px 20px;">Escribinos</button>
+</a>
+
     </section>
   </main>
 
